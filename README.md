@@ -1,27 +1,42 @@
-# AngularEcom01
+# Ecommerce App Frontend - Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+This is the frontend application for the **Ecommerce App**, built using **Angular**. It provides users with an interface for browsing products, managing their shopping cart, and completing purchases.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Product Catalog**: Browse products with filters and search functionality.
+- **User Authentication**: Sign up, log in, and manage profiles with secure access.
+- **Shopping Cart**: Add, edit, and remove items with a real-time cart view.
+- **Checkout and Payment**: Integrated with Stripe for a secure payment experience.
+- **Order Management**: View order history and track orders.
+- **Responsive Design**: Optimized for desktop and mobile views.
 
-## Build
+## Technologies Used
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Angular**: Frontend framework for building dynamic user interfaces.
+- **TypeScript**: For type-safe code in Angular components.
+- **Bootstrap**: Styling framework.
+- **Stripe API**: Payment processing.
+- **RxJS**: Reactive programming with observables for efficient state management.
+- **Okta**: Authentication and Authorization of user.
 
-## Running unit tests
+## Getting Started
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Prerequisites
+- **Node.js** (v14+) 
+- **npm** (10.8+)
+- **Angular CLI** (I would recommend to install it globally `npm install -g @angular/cli`)
 
-## Running end-to-end tests
+### Installation and Setup
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/devraider/ecommerce-app-frontend-angular.git
+   cd ecommerce-app-frontend-angular
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+2. **Install dependecies**
+    ```bash
+    npm install
+    ```
