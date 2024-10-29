@@ -17,6 +17,14 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "@babel/runtime-corejs3/regenerator",
+              "cross-fetch",
+              "p-cancelable",
+              "tiny-emitter",
+              "detect-node",
+              "@okta/okta-signin-widget"
+            ],
             "outputPath": "dist/angular-ecom-01",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -30,7 +38,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "node_modules/@okta/okta-signin-widget/dist/css/okta-sign-in.min.css"
             ],
             "scripts": []
           },
@@ -56,8 +67,29 @@
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ]
+            },
+            "qa": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.qa.ts"
+                }
+              ]
             }
+            
           },
           "defaultConfiguration": "production"
         },
@@ -69,6 +101,9 @@
             },
             "development": {
               "browserTarget": "AngularEcom-01:build:development"
+            },
+            "qa": {
+              "browserTarget": "AngularEcom-01:build:qa"
             }
           },
           "defaultConfiguration": "development"
@@ -100,5 +135,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "05d4b184-a7b5-47ba-8803-168b9a7b42be"
   }
 }
