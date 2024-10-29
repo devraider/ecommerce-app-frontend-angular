@@ -3,7 +3,7 @@
 This is the frontend application for the **Ecommerce App**, built using **Angular**. It provides users with an interface for browsing products, managing their shopping cart, and completing purchases.
 
 > [!note]
-> This project using as backend [Ecommerce App - Springboot](https://github.com/devraider/ecommerce-app-backend-sprinboot)
+> This project using as backend [Ecommerce App - Springboot](https://github.com/devraider/ecommerce-app-backend-springboot)
 
 ## Features
 
