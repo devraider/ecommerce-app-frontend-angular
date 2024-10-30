@@ -7,11 +7,11 @@ This is the frontend application for the **Ecommerce App**, built using **Angula
 
 ## Presentation images
 1. Home page
-   ![alt text](image.png)
+   ![alt text](/src/assets/docs/image.png)
 2. Cart
-   ![alt text](image-1.png)
+   ![alt text](/src/assets/docs/image-1.png)
 3. Okta Authentication component
-   ![alt text](image-2.png)
+   ![alt text](/src/assets/docs/image-2.png)
 ## Features
 
 - **Product Catalog**: Browse products with filters and search functionality.
