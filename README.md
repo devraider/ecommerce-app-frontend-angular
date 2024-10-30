@@ -5,6 +5,13 @@ This is the frontend application for the **Ecommerce App**, built using **Angula
 > [!note]
 > This project using as backend [Ecommerce App - Springboot](https://github.com/devraider/ecommerce-app-backend-springboot)
 
+## Presentation images
+1. Home page
+   ![alt text](image.png)
+2. Cart
+   ![alt text](image-1.png)
+3. Okta Authentication component
+   ![alt text](image-2.png)
 ## Features
 
 - **Product Catalog**: Browse products with filters and search functionality.
@@ -41,3 +48,8 @@ This is the frontend application for the **Ecommerce App**, built using **Angula
     ```bash
     npm install
     ```
+
+### Run the applicaion
+   ```bash
+   npm start
+   ```
